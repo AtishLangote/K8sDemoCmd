@@ -1,13 +1,12 @@
 apiVersion: v1
-       kind: Pod
-       metadata:
-       name: hello-pod
-       labels:
-       app: web
-       spec:Q
-       containers:
-       - name: web-ctr
-       image: 10542/atishimages:dockerdemo
-       ports:
-        - containerPort: 8082
-        
+kind: Pod
+metadata:
+name: hello-pod
+labels:
+app: web
+spec:
+containers:
+- name: web-ctr
+image: abdullahkhandock99/khanimages:dockerdemo
+ports:
+- containerPort: 8080
